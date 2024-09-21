@@ -1,6 +1,27 @@
 import Image from "next/image";
+import Header from "@/components/header/Header";
+import BarcodeGenerator from "@/components/home/BarcodeGenerator";
+import BarcodeTypes from "@/components/home/BarcodeTypes";
+import SiteIntro from "@/components/home/SiteIntro";
+import FAQ from "@/components/home/FAQ";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Header />
+
+      <main className="flex-grow">
+        <BarcodeGenerator />
+        <BarcodeTypes />
+        <SiteIntro />
+        <FAQ />
+      </main>
+
+      <Footer />
+    </div>
+  );
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
