@@ -12,9 +12,9 @@ export default function Home() {
       <Header />
 
       <main className="flex-grow">
+        <SiteIntro />
         <BarcodeGenerator />
         <BarcodeTypes />
-        <SiteIntro />
         <FAQ />
       </main>
 

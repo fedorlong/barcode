@@ -23,20 +23,20 @@ const Header = () => {
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image src="/logo.png" alt="Site Logo" width={40} height={40} />
-          <span className="ml-2 text-xl font-bold">条形码生成器</span>
+          <span className="ml-2 text-xl font-bold">BARCODE GENIE</span>
         </Link>
 
         <nav className="hidden md:flex space-x-4">
-          <Link href="#generator" className="text-gray-600 hover:text-gray-900">生成器</Link>
-          <Link href="#types" className="text-gray-600 hover:text-gray-900">条形码类型</Link>
-          <Link href="#about" className="text-gray-600 hover:text-gray-900">关于我们</Link>
-          <Link href="#faq" className="text-gray-600 hover:text-gray-900">常见问题</Link>
+          {/* <Link href="#generator" className="text-gray-600 hover:text-gray-900">生成器</Link> */}
+          <Link href="#types" className="text-gray-600 hover:text-gray-900">Changelog</Link>
+          <Link href="#about" className="text-gray-600 hover:text-gray-900">Blog</Link>
+          <Link href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</Link>
         </nav>
 
         <div className="flex items-center space-x-4">
           <Select onValueChange={handleLanguageChange}>
             <SelectTrigger className="w-[100px]">
-              <SelectValue placeholder="语言" />
+              <SelectValue placeholder="lan" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="zh">中文</SelectItem>
@@ -45,8 +45,8 @@ const Header = () => {
             </SelectContent>
           </Select>
 
-          <Button variant="outline" onClick={() => router.push('/login')}>登录</Button>
-          <Button onClick={() => router.push('/signup')}>注册</Button>
+          {/* <Button variant="outline" onClick={() => router.push('/login')}>登录</Button>
+          <Button onClick={() => router.push('/signup')}>注册</Button> */}
         </div>
       </div>
     </header>
