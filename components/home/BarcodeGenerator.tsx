@@ -106,11 +106,6 @@ const BarcodeGenerator = () => {
           </div>
           {/* <canvas ref={canvasRef} id="canvas"></canvas> */}
         </div>
-        {/* {barcodeImage && (
-          <div className="mt-6">
-            <img src={barcodeImage} alt="生成的条形码" className="mx-auto" />
-          </div>
-        )} */}
       </div>
     </section>
   );
