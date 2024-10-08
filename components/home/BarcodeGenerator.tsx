@@ -10,6 +10,7 @@ import { BarcodeSelector } from './BarcodeSelector';
 import BwipJs from '@bwip-js/browser';
 import { symdesc } from '@/lib/consts';
 import { getDefaultSpecificOptions } from '@/lib/utils';
+import { GenParams } from '@/types/barcode';
 
 const BarcodeGenerator = () => {
   const [barcodeType, setBarcodeType] = useState<string | undefined>(undefined);
@@ -21,19 +22,34 @@ const BarcodeGenerator = () => {
     const defaultText = symdesc[value]?.text;
     setBarcodeData(defaultText);
     setAltText('');
+
+    generateBarcode({
+      bcid: value,
+      text: defaultText,
+      altText: '',
+    })
   }
 
-  const generateBarcode = async () => {
-    if (!barcodeType || !barcodeData) return;
+  const genBtnHandler = () => {
+    generateBarcode({
+      bcid: barcodeType,
+      text: barcodeData,
+      altText,
+    })
+  }
+
+  const generateBarcode = async (immediateParam: GenParams) => {
+    const { bcid, text, altText } = immediateParam || {};
+    if (!bcid || !text) return;
 
     try {
-      const optsStr = symdesc[barcodeType]?.opts;
+      const optsStr = symdesc[bcid]?.opts;
       const specificOptions = getDefaultSpecificOptions(optsStr);
 
       BwipJs.toCanvas('canvas', {
         ...specificOptions,
-        bcid: barcodeType,
-        text: barcodeData,
+        bcid: bcid,
+        text: text,
         alttext: altText,
         scale: 4,
       });
@@ -74,7 +90,7 @@ const BarcodeGenerator = () => {
               />
             </CardContent>
             <CardFooter className="mt-auto flex justify-center">
-              <Button variant="outline" onClick={generateBarcode}><Pencil1Icon className="mr-2" />Generate Barcode</Button>
+              <Button variant="outline" onClick={genBtnHandler}><Pencil1Icon className="mr-2" />Generate Barcode</Button>
             </CardFooter>
           </Card>
 

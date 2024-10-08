@@ -6,3 +6,9 @@ export type SymDesc = {
     opts: string;
   }
 }
+
+export type GenParams = {
+  bcid: string | undefined;
+  text: string;
+  altText: string;
+}
