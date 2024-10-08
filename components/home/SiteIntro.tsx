@@ -1,14 +1,25 @@
+import { QuickGen } from "./QuickGen";
+
 const SiteIntro = () => {
   return (
-    <section id="about" className="py-12">
+    <section id="about" className="pt-12 pb-1">
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl font-bold mb-4">Barcode Genie, your best barcode generator</h1>
-        <p className="text-xl mb-6">
-          barcode genie is a free barcode generator that supports most of the barcode standards.
+        <div className="flex items-center justify-center px-4 py-1 mx-auto mb-5 space-x-2 overflow-hidden transition-all duration-300 border border-opacity-25 rounded-full shadow-md border-slate-500 hover:shadow-xl max-w-fit">
+          <p className="text-sm">
+            Barcode Genie, a
+            <span className="font-semibold"> free </span>
+            barcode generator
+          </p>
+        </div>
+        <h1 className="font-bold tracking-tighter text-3xl md:text-4xl lg:text-5xl mt-5 mb-3">A Barcode Generator so good<br className="hidden sm:inline" /> it feels like magic</h1>
+        <p className="text-balance font-light text-foreground mt-4 text-sm sm:text-sm mb-1">
+          Quickly create&nbsp;
+          <QuickGen />&nbsp;
+          and more. Barcode Genie supports 100+ formats for retail, inventory, and logistics.
         </p>
-        {/* <p className="text-lg">
-          使用我们的条形码生成器，轻松创建专业质量的条形码和二维码。
-          支持多种格式，确保与各种扫描设备兼容。立即开始，提升您的效率！
+        {/* <p className="text-balance font-light text-foreground mt-4 max-w-[42rem] text-lg sm:text-xl">
+          quick generate
+          <QuickGen />
         </p> */}
       </div>
     </section>

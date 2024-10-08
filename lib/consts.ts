@@ -160,91 +160,104 @@ export const CATEGORY_NAMES = {
 export const CATEGORY_MAP = {
   [Category.PointOfSale]: [
     { value: 'ean13', label: symdesc.ean13.desc },
-    { value: 'ean8', label: symdesc.ean8.desc },
     { value: 'upca', label: symdesc.upca.desc },
+    { value: 'ean8', label: symdesc.ean8.desc },
     { value: 'upce', label: symdesc.upce.desc },
     { value: 'isbn', label: symdesc.isbn.desc },
-    { value: 'ismn', label: symdesc.ismn.desc },
-    { value: 'issn', label: symdesc.issn.desc }
-  ],
-  [Category.GS1DataBar]: [
-    { value: 'databaromni', label: symdesc.databaromni.desc },
-    { value: 'databarstackedomni', label: symdesc.databarstackedomni.desc },
-    { value: 'databarexpanded', label: symdesc.databarexpanded.desc },
-    { value: 'databarexpandedstacked', label: symdesc.databarexpandedstacked.desc },
-    { value: 'databartruncated', label: symdesc.databartruncated.desc },
-    { value: 'databarstacked', label: symdesc.databarstacked.desc },
-    { value: 'databarlimited', label: symdesc.databarlimited.desc },
-    { value: 'gs1northamericancoupon', label: symdesc.gs1northamericancoupon.desc }
-  ],
-  [Category.SupplyChain]: [
-    { value: 'ean14', label: symdesc.ean14.desc },
-    { value: 'itf14', label: symdesc.itf14.desc },
-    { value: 'sscc18', label: symdesc.sscc18.desc },
-    { value: 'gs1-128', label: symdesc['gs1-128'].desc },
-    { value: 'gs1datamatrix', label: symdesc.gs1datamatrix.desc },
-    { value: 'gs1qrcode', label: symdesc.gs1qrcode.desc },
-    { value: 'gs1dldatamatrix', label: symdesc.gs1dldatamatrix.desc },
-    { value: 'gs1dlqrcode', label: symdesc.gs1dlqrcode.desc },
-    { value: 'gs1dotcode', label: symdesc.gs1dotcode.desc }
-  ],
-  [Category.TwoDimensional]: [
-    { value: 'azteccode', label: symdesc.azteccode.desc },
-    { value: 'azteccodecompact', label: symdesc.azteccodecompact.desc },
-    { value: 'aztecrune', label: symdesc.aztecrune.desc },
-    { value: 'datamatrix', label: symdesc.datamatrix.desc },
-    { value: 'datamatrixrectangular', label: symdesc.datamatrixrectangular.desc },
-    { value: 'datamatrixrectangularextension', label: symdesc.datamatrixrectangularextension.desc },
-    { value: 'dotcode', label: symdesc.dotcode.desc },
-    { value: 'hanxin', label: symdesc.hanxin.desc },
-    { value: 'pdf417', label: symdesc.pdf417.desc },
-    { value: 'pdf417compact', label: symdesc.pdf417compact.desc },
-    { value: 'micropdf417', label: symdesc.micropdf417.desc },
-    { value: 'qrcode', label: symdesc.qrcode.desc },
-    { value: 'microqrcode', label: symdesc.microqrcode.desc },
-    { value: 'swissqrcode', label: symdesc.swissqrcode.desc }
+    { value: 'issn', label: symdesc.issn.desc },
+    { value: 'ismn', label: symdesc.ismn.desc }
   ],
   [Category.OneDimensional]: [
     { value: 'code128', label: symdesc.code128.desc },
     { value: 'code39', label: symdesc.code39.desc },
-    { value: 'code39ext', label: symdesc.code39ext.desc },
+    { value: 'interleaved2of5', label: symdesc.interleaved2of5.desc },
     { value: 'code93', label: symdesc.code93.desc },
-    { value: 'code93ext', label: symdesc.code93ext.desc },
-    { value: 'interleaved2of5', label: symdesc.interleaved2of5.desc }
+    { value: 'code39ext', label: symdesc.code39ext.desc },
+    { value: 'code93ext', label: symdesc.code93ext.desc }
+  ],
+  [Category.TwoDimensional]: [
+    { value: 'qrcode', label: symdesc.qrcode.desc },
+    { value: 'datamatrix', label: symdesc.datamatrix.desc },
+    { value: 'pdf417', label: symdesc.pdf417.desc },
+    { value: 'azteccode', label: symdesc.azteccode.desc },
+    { value: 'datamatrixrectangular', label: symdesc.datamatrixrectangular.desc },
+    { value: 'micropdf417', label: symdesc.micropdf417.desc },
+    { value: 'microqrcode', label: symdesc.microqrcode.desc },
+    { value: 'pdf417compact', label: symdesc.pdf417compact.desc },
+    { value: 'hanxin', label: symdesc.hanxin.desc },
+    { value: 'dotcode', label: symdesc.dotcode.desc },
+    { value: 'azteccodecompact', label: symdesc.azteccodecompact.desc },
+    { value: 'datamatrixrectangularextension', label: symdesc.datamatrixrectangularextension.desc },
+    { value: 'aztecrune', label: symdesc.aztecrune.desc },
+    { value: 'swissqrcode', label: symdesc.swissqrcode.desc }
+  ],
+  [Category.SupplyChain]: [
+    { value: 'gs1-128', label: symdesc['gs1-128'].desc },
+    { value: 'gs1datamatrix', label: symdesc.gs1datamatrix.desc },
+    { value: 'gs1qrcode', label: symdesc.gs1qrcode.desc },
+    { value: 'ean14', label: symdesc.ean14.desc },
+    { value: 'itf14', label: symdesc.itf14.desc },
+    { value: 'sscc18', label: symdesc.sscc18.desc },
+    { value: 'gs1dldatamatrix', label: symdesc.gs1dldatamatrix.desc },
+    { value: 'gs1dlqrcode', label: symdesc.gs1dlqrcode.desc },
+    { value: 'gs1dotcode', label: symdesc.gs1dotcode.desc }
+  ],
+  [Category.GS1DataBar]: [
+    { value: 'databaromni', label: symdesc.databaromni.desc },
+    { value: 'databarexpanded', label: symdesc.databarexpanded.desc },
+    { value: 'databarlimited', label: symdesc.databarlimited.desc },
+    { value: 'databarexpandedstacked', label: symdesc.databarexpandedstacked.desc },
+    { value: 'databarstackedomni', label: symdesc.databarstackedomni.desc },
+    { value: 'databartruncated', label: symdesc.databartruncated.desc },
+    { value: 'databarstacked', label: symdesc.databarstacked.desc },
+    { value: 'gs1northamericancoupon', label: symdesc.gs1northamericancoupon.desc }
   ],
   [Category.Postal]: [
-    { value: 'auspost', label: symdesc.auspost.desc },
-    { value: 'identcode', label: symdesc.identcode.desc },
-    { value: 'leitcode', label: symdesc.leitcode.desc },
-    { value: 'japanpost', label: symdesc.japanpost.desc },
-    { value: 'maxicode', label: symdesc.maxicode.desc },
-    { value: 'royalmail', label: symdesc.royalmail.desc },
-    { value: 'mailmark', label: symdesc.mailmark.desc },
-    { value: 'kix', label: symdesc.kix.desc },
-    { value: 'onecode', label: symdesc.onecode.desc },
     { value: 'postnet', label: symdesc.postnet.desc },
-    { value: 'planet', label: symdesc.planet.desc }
+    { value: 'onecode', label: symdesc.onecode.desc },
+    { value: 'royalmail', label: symdesc.royalmail.desc },
+    { value: 'auspost', label: symdesc.auspost.desc },
+    { value: 'japanpost', label: symdesc.japanpost.desc },
+    { value: 'planet', label: symdesc.planet.desc },
+    { value: 'kix', label: symdesc.kix.desc },
+    { value: 'mailmark', label: symdesc.mailmark.desc },
+    { value: 'maxicode', label: symdesc.maxicode.desc },
+    { value: 'identcode', label: symdesc.identcode.desc },
+    { value: 'leitcode', label: symdesc.leitcode.desc }
   ],
   [Category.Pharmaceutical]: [
-    { value: 'code32', label: symdesc.code32.desc },
     { value: 'pharmacode', label: symdesc.pharmacode.desc },
-    { value: 'pharmacode2', label: symdesc.pharmacode2.desc },
-    { value: 'pzn', label: symdesc.pzn.desc },
-    { value: 'hibccode39', label: symdesc.hibccode39.desc },
     { value: 'hibccode128', label: symdesc.hibccode128.desc },
-    { value: 'hibcpdf417', label: symdesc.hibcpdf417.desc },
-    { value: 'hibcmicropdf417', label: symdesc.hibcmicropdf417.desc },
-    { value: 'hibcqrcode', label: symdesc.hibcqrcode.desc },
     { value: 'hibcdatamatrix', label: symdesc.hibcdatamatrix.desc },
+    { value: 'hibccode39', label: symdesc.hibccode39.desc },
+    { value: 'code32', label: symdesc.code32.desc },
+    { value: 'pzn', label: symdesc.pzn.desc },
+    { value: 'hibcqrcode', label: symdesc.hibcqrcode.desc },
+    { value: 'hibcpdf417', label: symdesc.hibcpdf417.desc },
+    { value: 'pharmacode2', label: symdesc.pharmacode2.desc },
+    { value: 'hibcmicropdf417', label: symdesc.hibcmicropdf417.desc },
     { value: 'hibccodablockf', label: symdesc.hibccodablockf.desc }
   ],
+  [Category.GS1Composite]: [
+    { value: 'ean13composite', label: symdesc.ean13composite.desc },
+    { value: 'upcacomposite', label: symdesc.upcacomposite.desc },
+    { value: 'databaromnicomposite', label: symdesc.databaromnicomposite.desc },
+    { value: 'ean8composite', label: symdesc.ean8composite.desc },
+    { value: 'upcecomposite', label: symdesc.upcecomposite.desc },
+    { value: 'databarexpandedcomposite', label: symdesc.databarexpandedcomposite.desc },
+    { value: 'databarlimitedcomposite', label: symdesc.databarlimitedcomposite.desc },
+    { value: 'gs1-128composite', label: symdesc['gs1-128composite'].desc },
+    { value: 'databarstackedomnicomposite', label: symdesc.databarstackedomnicomposite.desc },
+    { value: 'databarexpandedstackedcomposite', label: symdesc.databarexpandedstackedcomposite.desc },
+    { value: 'databartruncatedcomposite', label: symdesc.databartruncatedcomposite.desc },
+    { value: 'databarstackedcomposite', label: symdesc.databarstackedcomposite.desc }
+  ],
   [Category.LessUsed]: [
-    { value: 'bc412', label: symdesc.bc412.desc },
-    { value: 'channelcode', label: symdesc.channelcode.desc },
-    { value: 'rationalizedCodabar', label: symdesc.rationalizedCodabar.desc },
     { value: 'codablockf', label: symdesc.codablockf.desc },
     { value: 'code11', label: symdesc.code11.desc },
-    { value: 'code16k', label: symdesc.code16k.desc },
+    { value: 'rationalizedCodabar', label: symdesc.rationalizedCodabar.desc },
+    { value: 'msi', label: symdesc.msi.desc },
+    { value: 'plessey', label: symdesc.plessey.desc },
     { value: 'code2of5', label: symdesc.code2of5.desc },
     { value: 'industrial2of5', label: symdesc.industrial2of5.desc },
     { value: 'iata2of5', label: symdesc.iata2of5.desc },
@@ -252,83 +265,110 @@ export const CATEGORY_MAP = {
     { value: 'coop2of5', label: symdesc.coop2of5.desc },
     { value: 'datalogic2of5', label: symdesc.datalogic2of5.desc },
     { value: 'code49', label: symdesc.code49.desc },
+    { value: 'code16k', label: symdesc.code16k.desc },
     { value: 'codeone', label: symdesc.codeone.desc },
-    { value: 'msi', label: symdesc.msi.desc },
-    { value: 'plessey', label: symdesc.plessey.desc },
-    { value: 'posicode', label: symdesc.posicode.desc },
     { value: 'telepen', label: symdesc.telepen.desc },
+    { value: 'posicode', label: symdesc.posicode.desc },
+    { value: 'channelcode', label: symdesc.channelcode.desc },
     { value: 'telepennumeric', label: symdesc.telepennumeric.desc },
+    { value: 'bc412', label: symdesc.bc412.desc },
     { value: 'ultracode', label: symdesc.ultracode.desc }
   ],
-  [Category.GS1Composite]: [
-    { value: 'ean13composite', label: symdesc.ean13composite.desc },
-    { value: 'ean8composite', label: symdesc.ean8composite.desc },
-    { value: 'upcacomposite', label: symdesc.upcacomposite.desc },
-    { value: 'upcecomposite', label: symdesc.upcecomposite.desc },
-    { value: 'databaromnicomposite', label: symdesc.databaromnicomposite.desc },
-    { value: 'databarstackedomnicomposite', label: symdesc.databarstackedomnicomposite.desc },
-    { value: 'databarexpandedcomposite', label: symdesc.databarexpandedcomposite.desc },
-    { value: 'databarexpandedstackedcomposite', label: symdesc.databarexpandedstackedcomposite.desc },
-    { value: 'databartruncatedcomposite', label: symdesc.databartruncatedcomposite.desc },
-    { value: 'databarstackedcomposite', label: symdesc.databarstackedcomposite.desc },
-    { value: 'databarlimitedcomposite', label: symdesc.databarlimitedcomposite.desc },
-    { value: 'gs1-128composite', label: symdesc['gs1-128composite'].desc }
-  ],
   [Category.RawSymbols]: [
+    { value: 'raw', label: symdesc.raw.desc },
     { value: 'daft', label: symdesc.daft.desc },
-    { value: 'flattermarken', label: symdesc.flattermarken.desc },
-    { value: 'raw', label: symdesc.raw.desc }
+    { value: 'flattermarken', label: symdesc.flattermarken.desc }
   ],
   [Category.PartialSymbols]: [
-    { value: 'ean2', label: symdesc.ean2.desc },
     { value: 'ean5', label: symdesc.ean5.desc },
+    { value: 'ean2', label: symdesc.ean2.desc },
     { value: 'gs1-cc', label: symdesc['gs1-cc'].desc }
   ]
 };
 
-// export const CATEGORY_MAP = {
-//     [Category.PointOfSale]: [
-//         "ean13", "ean8", "upca", "upce", "isbn", "ismn", "issn"
-//     ],
-//     [Category.GS1DataBar]: [
-//         "databaromni", "databarstackedomni", "databarexpanded", "databarexpandedstacked",
-//         "databartruncated", "databarstacked", "databarlimited", "gs1northamericancoupon"
-//     ],
-//     [Category.SupplyChain]: [
-//         "ean14", "itf14", "sscc18", "gs1-128", "gs1datamatrix", "gs1qrcode",
-//         "gs1dldatamatrix", "gs1dlqrcode", "gs1dotcode"
-//     ],
-//     [Category.TwoDimensional]: [
-//         "azteccode", "azteccodecompact", "aztecrune", "datamatrix", "datamatrixrectangular",
-//         "datamatrixrectangularextension", "dotcode", "hanxin", "pdf417", "pdf417compact",
-//         "micropdf417", "qrcode", "microqrcode", "swissqrcode"
-//     ],
-//     [Category.OneDimensional]: [
-//         "code128", "code39", "code39ext", "code93", "code93ext", "interleaved2of5"
-//     ],
-//     [Category.Postal]: [
-//         "auspost", "identcode", "leitcode", "japanpost", "maxicode", "royalmail",
-//         "mailmark", "kix", "onecode", "postnet", "planet"
-//     ],
-//     [Category.Pharmaceutical]: [
-//         "code32", "pharmacode", "pharmacode2", "pzn", "hibccode39", "hibccode128",
-//         "hibcpdf417", "hibcmicropdf417", "hibcqrcode", "hibcdatamatrix", "hibccodablockf"
-//     ],
-//     [Category.LessUsed]: [
-//         "bc412", "channelcode", "rationalizedCodabar", "codablockf", "code11", "code16k",
-//         "code2of5", "industrial2of5", "iata2of5", "matrix2of5", "coop2of5", "datalogic2of5",
-//         "code49", "codeone", "msi", "plessey", "posicode", "telepen", "telepennumeric", "ultracode"
-//     ],
-//     [Category.GS1Composite]: [
-//         "ean13composite", "ean8composite", "upcacomposite", "upcecomposite",
-//         "databaromnicomposite", "databarstackedomnicomposite", "databarexpandedcomposite",
-//         "databarexpandedstackedcomposite", "databartruncatedcomposite", "databarstackedcomposite",
-//         "databarlimitedcomposite", "gs1-128composite"
-//     ],
-//     [Category.RawSymbols]: [
-//         "daft", "flattermarken", "raw"
-//     ],
-//     [Category.PartialSymbols]: [
-//         "ean2", "ean5", "gs1-cc"
-//     ]
-// };
+export const COMMON_BARCODE_TYPES = [
+  {
+    value: 'upca',
+    label: symdesc.upca.desc,
+    url: '/img/upca.png',
+    usage: 'Retail product identification in North America, widely used in supermarkets and other retail environments.', 
+    dataFormat: '12-digit numeric code (11 data digits + 1 check digit)'
+  },
+  {
+    value: 'ean13',
+    label: symdesc.ean13.desc,
+    url: '/img/ean13.png',
+    usage: 'Global retail product identification, primarily used in European countries for retail products.', 
+    dataFormat: '13-digit numeric code (12 data digits + 1 check digit)'
+  },
+  {
+    value: 'code128',
+    label: symdesc.code128.desc,
+    url: '/img/code128.png',
+    usage: 'Logistics, supply chain management, and shipping labels for encoding alphanumeric data.', 
+    dataFormat: 'Alphanumeric characters (full ASCII set) with variable length'
+  },
+  {
+    value: 'code39',
+    label: symdesc.code39.desc,
+    url: '/img/code39.png',
+    usage: 'Automotive and defense industries, commonly used for inventory and tracking.', 
+    dataFormat: 'Alphanumeric characters (0-9, A-Z, space) with variable length'
+  },
+  {
+    value: 'interleaved2of5',
+    label: symdesc.interleaved2of5.desc,
+    url: '/img/interleaved2of5.png',
+    usage: 'Logistics and warehouse operations, especially for labeling cartons and pallets.', 
+    dataFormat: 'Numeric-only format with variable length, must have an even number of digits'
+  },
+  {
+    value: 'postnet',
+    label: symdesc.postnet.desc,
+    url: '/img/postnet.png',
+    usage: 'US Postal Service for automated mail sorting.', 
+    dataFormat: 'Numeric-only, typically 5, 9, or 11 digits'
+  },
+  {
+    value: 'pdf417',
+    label: symdesc.pdf417.desc,
+    url: '/img/pdf417.png',
+    usage: 'Identification cards, transport tickets, and storing large amounts of data (e.g., in airline boarding passes).', 
+    dataFormat: 'Alphanumeric, including special characters, with high data capacity'
+  },
+  {
+    value: 'qrcode',
+    label: symdesc.qrcode.desc,
+    url: '/img/qrcode.png',
+    usage: 'Marketing, mobile payments, and web URLs, especially for fast scanning by mobile devices.', 
+    dataFormat: 'Alphanumeric characters, binary data, or Kanji, supports up to 7,089 numeric or 4,296 alphanumeric characters'
+  },
+  {
+    value: 'datamatrix',
+    label: symdesc.datamatrix.desc,
+    url: '/img/datamatrix.png',
+    usage: 'Used in aerospace, defense, and pharmaceuticals for marking small products or parts.', 
+    dataFormat: 'Alphanumeric or binary data, up to several thousand characters'
+  },
+  {
+    value: 'azteccode',
+    label: symdesc.azteccode.desc,
+    url: '/img/azteccode.png',
+    usage: 'Primarily used in transportation tickets, such as airline boarding passes.', 
+    dataFormat: 'Alphanumeric, binary, and special characters, supports up to 3,832 numeric or 3,067 alphanumeric characters'
+  },
+  {
+    value: 'pharmacode',
+    label: symdesc.pharmacode.desc,
+    url: '/img/pharmacode.png',
+    usage: 'Pharmaceutical packaging for encoding information related to drug approval or manufacturing.', 
+    dataFormat: 'Numeric only, typically small ranges (up to 7 digits)'
+  },
+  {
+    value: 'isbn',
+    label: symdesc.isbn.desc,
+    url: '/img/isbn.png',
+    usage: 'Books and other publications for unique identification in the publishing industry.', 
+    dataFormat: '13-digit numeric code (prefix, group, publisher, title, check digit)'
+  }
+];
