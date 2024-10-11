@@ -86,7 +86,7 @@ export const BarcodeSelector: React.FC<BarcodeSelectorProps> = ({ onSelect }) =>
   return (
     <Card className="rounded">
       <CardContent className="pt-4 pb-0 px-0">
-        <div ref={cardRef} className="max-h-[40vh] overflow-y-auto px-2">
+        <div ref={cardRef} className="max-h-[40vh] overflow-y-auto px-4">
           <Accordion
             type="single"
             value={openCategory}
@@ -100,19 +100,19 @@ export const BarcodeSelector: React.FC<BarcodeSelectorProps> = ({ onSelect }) =>
                   ref={(el: HTMLButtonElement | null) => {
                     if (el) triggerRefs.current[category] = el;
                   }}
-                  className="cursor-pointer p-2 rounded inline-flex items-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
-                  bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3 dark:bg-muted dark:text-white dark:hover:bg-muted dark:hover:text-white justify-start"
+                  className="cursor-pointer p-2 flex items-center justify-between whitespace-nowrap text-sm font-medium w-full 
+                  bg-accent-foreground text-primary-foreground hover:bg-primary/90 h-10 rounded-none px-3"
                   style={{ fontWeight: 600 }}
                 >
-                  {CATEGORY_NAMES[category as Category]}
+                  <span>{CATEGORY_NAMES[category as Category]}</span>
                 </AccordionTrigger>
                 <AccordionContent>
                   <ul className="space-y-0.5">
                     {barcodes.map((barcode) => (
                       <li
                         key={barcode.value}
-                        className={`cursor-pointer p-2 rounded ${
-                          selectedType === barcode.value ? 'bg-gray-100 font-semibold' : 'hover:bg-gray-100'
+                        className={`cursor-pointer p-[8px] rounded ${
+                          selectedType === barcode.value ? 'bg-gray-100 font-semibold border-2 p-[6px] border-primary' : 'hover:bg-gray-100'
                         }`}
                         onClick={() => handleSelect(barcode.value)}
                       >

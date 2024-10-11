@@ -11,8 +11,8 @@ const BarcodeTypes = () => {
         <h2 className="text-3xl font-bold mb-6 text-center">Common Barcode Types</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {COMMON_BARCODE_TYPES.map((type) => (
-            <Card key={type.value} className="cursor-pointer hover:shadow-lg transition-shadow text-sm">
-              <CardHeader>
+            <Card key={type.value} className="hover:shadow-lg transition-shadow text-sm">
+              <CardHeader className="pb-4 flex flex-row items-center justify-between">
                 <CardTitle>{type.label}</CardTitle>
                 <SelectBarcodeButton barcodeType={type.value} />
               </CardHeader>
@@ -29,7 +29,7 @@ const BarcodeTypes = () => {
                     decoding="async"
                   />
                 </div>
-                <p><strong>Format:</strong> {type.dataFormat}</p>
+                <p className="mb-2"><strong>Format:</strong> {type.dataFormat}</p>
                 <p><strong>Usage:</strong> {type.usage}</p>
               </CardContent>
             </Card>

@@ -1,5 +1,19 @@
 import { SymDesc } from "@/types/barcode";
 
+export enum DownloadKey {
+  png = 'image/png',
+  jpeg = 'image/jpeg',
+  bmp = 'image/bmp',
+  gif = 'image/gif',
+}
+
+export const DownloadTypeInfoMap: Record<DownloadKey, { ext: string, mimeType: string }> = {
+  [DownloadKey.png]: { ext: '.png', mimeType: 'image/png' },
+  [DownloadKey.jpeg]: { ext: '.jpg', mimeType: 'image/jpeg' },
+  [DownloadKey.bmp]: { ext: '.bmp', mimeType: 'image/bmp' },
+  [DownloadKey.gif]: { ext: '.gif', mimeType: 'image/gif' },
+};
+
 // bwip-js barcode types
 export const symdesc: SymDesc = {
     "ean5":{ sym:"ean5",desc:"EAN-5 (5 digit addon)",text:"90200",opts:"includetext guardwhitespace" },
@@ -34,8 +48,8 @@ export const symdesc: SymDesc = {
     "databarexpanded":{ sym:"databarexpanded",desc:"GS1 DataBar Expanded",text:"(01)09521234543213(3103)000123",opts:"" },
     "databarexpandedstacked":{ sym:"databarexpandedstacked",desc:"GS1 DataBar Expanded Stacked",text:"(01)09521234543213(3103)000123",opts:"segments=4" },
     "gs1northamericancoupon":{ sym:"gs1northamericancoupon",desc:"GS1 North American Coupon",text:"(8110)106141416543213500110000310123196000",opts:"includetext segments=8" },
-    "pharmacode":{ sym:"pharmacode",desc:"Pharmaceutical Binary Code",text:"117480",opts:"showborder" },
-    "pharmacode2":{ sym:"pharmacode2",desc:"Two-track Pharmacode",text:"117480",opts:"includetext showborder" },
+    "pharmacode":{ sym:"pharmacode",desc:"Pharmaceutical Binary Code",text:"117480",opts:"" },
+    "pharmacode2":{ sym:"pharmacode2",desc:"Two-track Pharmacode",text:"117480",opts:"includetext" },
     "code2of5":{ sym:"code2of5",desc:"Code 25",text:"01234567",opts:"includetext includecheck includecheckintext" },
     "industrial2of5":{ sym:"industrial2of5",desc:"Industrial 2 of 5",text:"01234567",opts:"includetext includecheck includecheckintext" },
     "iata2of5":{ sym:"iata2of5",desc:"IATA 2 of 5",text:"01234567",opts:"includetext includecheck includecheckintext" },
@@ -45,10 +59,10 @@ export const symdesc: SymDesc = {
     "code11":{ sym:"code11",desc:"Code 11",text:"0123456789",opts:"includetext includecheck includecheckintext" },
     "bc412":{ sym:"bc412",desc:"BC412",text:"BC412SEMI",opts:"semi includetext includecheckintext" },
     "rationalizedCodabar":{ sym:"rationalizedCodabar",desc:"Codabar",text:"A0123456789B",opts:"includetext includecheck includecheckintext" },
-    "onecode":{ sym:"onecode",desc:"USPS Intelligent Mail",text:"0123456709498765432101234567891",opts:"barcolor=FF0000" },
+    "onecode":{ sym:"onecode",desc:"USPS Intelligent Mail",text:"0123456709498765432101234567891",opts:"" },
     "postnet":{ sym:"postnet",desc:"USPS POSTNET",text:"01234",opts:"includetext includecheckintext" },
     "planet":{ sym:"planet",desc:"USPS PLANET",text:"01234567890",opts:"includetext includecheckintext" },
-    "royalmail":{ sym:"royalmail",desc:"Royal Mail 4 State Customer Code",text:"LE28HS9Z",opts:"includetext barcolor=FF0000" },
+    "royalmail":{ sym:"royalmail",desc:"Royal Mail 4 State Customer Code",text:"LE28HS9Z",opts:"includetext" },
     "auspost":{ sym:"auspost",desc:"AusPost 4 State Customer Code",text:"5956439111ABA 9",opts:"includetext custinfoenc=character" },
     "kix":{ sym:"kix",desc:"Royal Dutch TPG Post KIX",text:"1231FZ13XHS",opts:"includetext" },
     "japanpost":{ sym:"japanpost",desc:"Japan Post 4 State Customer Code",text:"6540123789-A-K-Z",opts:"includetext includecheckintext" },
@@ -61,7 +75,7 @@ export const symdesc: SymDesc = {
     "code16k":{ sym:"code16k",desc:"Code 16K",text:"Abcd-1234567890-wxyZ",opts:"" },
     "code49":{ sym:"code49",desc:"Code 49",text:"MULTIPLE ROWS IN CODE 49",opts:"" },
     "channelcode":{ sym:"channelcode",desc:"Channel Code",text:"3493",opts:"height=12 includetext" },
-    "flattermarken":{ sym:"flattermarken",desc:"Flattermarken",text:"11099",opts:"inkspread=-0.25 showborder borderleft=0 borderright=0" },
+    "flattermarken":{ sym:"flattermarken",desc:"Flattermarken",text:"11099",opts:"inkspread=-0.25 borderleft=0 borderright=0" },
     "raw":{ sym:"raw",desc:"Custom 1D symbology",text:"331132131313411122131311333213114131131221323",opts:"height=12" },
     "daft":{ sym:"daft",desc:"Custom 4 state symbology",text:"FATDAFTDAD",opts:"" },
     "symbol":{ sym:"symbol",desc:"Miscellaneous symbols",text:"fima",opts:"backgroundcolor=DD000011" },

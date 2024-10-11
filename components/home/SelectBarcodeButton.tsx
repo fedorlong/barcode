@@ -16,10 +16,11 @@ const SelectBarcodeButton: React.FC<SelectBarcodeButtonProps> = ({ barcodeType }
   };
 
   return (
-    <Button 
+    <Button
       onClick={handleClick}
-      variant="outline" 
+      variant="outline"
       size="sm"
+      className="!mt-0 h-7"
     >
       generate
     </Button>
