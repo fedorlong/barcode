@@ -16,10 +16,10 @@ const Header = () => {
   console.log(language)
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/50 backdrop-blur-md">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="Site Logo" width={40} height={40} />
+          <Image src="/img/upca.png" alt="Site Logo" width={40} height={40} />
           <span className="ml-2 text-xl font-bold">BARCODE GENIE</span>
         </Link>
 

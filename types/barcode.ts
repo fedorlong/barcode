@@ -4,6 +4,7 @@ export type SymDesc = {
     desc: string;
     text: string;
     opts: string;
+    format: string;
   }
 }
 

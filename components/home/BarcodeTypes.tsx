@@ -19,7 +19,7 @@ const BarcodeTypes = () => {
               <CardContent>
                 <div className="w-full flex justify-center mb-4">
                   <Image
-                    className="rounded-sm shrink-0"
+                    className="shrink-0"
                     src={type?.url}
                     alt="tool Logo"
                     width={0}

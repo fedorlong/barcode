@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { ReloadIcon, DownloadIcon } from "@radix-ui/react-icons"
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
@@ -102,18 +102,19 @@ const BarcodeGenerator = () => {
               <div className="mt-4 font-bold">Barcode Data</div>
               <Textarea
                 placeholder="input barcode data"
-                rows={3}
+                rows={4}
                 value={barcodeData || ''}
                 onChange={(e) => setBarcodeData(e.target.value)}
               />
+              <div className="mt-2 text-gray-500 text-xs">{barcodeType && symdesc[barcodeType]?.format}</div>
               {/** whether alt text is needed? */}
-              <div className="mt-4 font-bold">Alt Text</div>
+              {/* <div className="mt-4 font-bold">Alt Text</div>
               <Input
                 type="text"
                 placeholder="input alt text"
                 value={altText || ''}
                 onChange={(e) => setAltText(e.target.value)}
-              />
+              /> */}
             </CardContent>
             <CardFooter className="mt-auto flex justify-center">
               <Button variant="outline" className="border-primary" onClick={genBtnHandler}><ReloadIcon className="mr-2" />Generate Barcode</Button>
