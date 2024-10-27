@@ -4,13 +4,13 @@ import { Textarea } from "@/components/ui/textarea";
 const Footer = () => {
   return (
     <footer className="bg-slate-300/20 py-8">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-10">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 md:w-2/3 pr-10">
             <h3 className="text-lg font-semibold mb-1">Support Us by Sharing!</h3>
             <p className="text-sm mb-1">Enjoy our barcode tool? Share the link and help us reach more users!</p>
             <Textarea
-              className="text-sm"
+              className="text-sm px-2 py-1"
               readOnly
               value={`<a href="https://www.yourwebsite.com" title="Leading Barcode Generator" rel="nofollow">Leading Barcode Generator</a>`}
             />

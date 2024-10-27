@@ -3,7 +3,7 @@ import { QuickGen } from "./QuickGen";
 const SiteIntro = () => {
   return (
     <section id="about" className="pt-12 pb-1">
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto px-8 text-center">
         <div className="flex items-center justify-center px-4 py-1 mx-auto mb-5 space-x-2 overflow-hidden transition-all duration-300 border border-opacity-25 rounded-full shadow-md border-slate-500 hover:shadow-xl max-w-fit">
           <p className="text-sm">
             Barcode Genie, a

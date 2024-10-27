@@ -26,7 +26,7 @@ const faqItems = [
 const FAQ = () => {
   return (
     <section id="faq" className="py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-10 md:px-36">
         <h2 className="text-3xl font-bold mb-6 text-center">Frequently asked questions</h2>
         <Accordion type="multiple">
           {faqItems.map((item, index) => (

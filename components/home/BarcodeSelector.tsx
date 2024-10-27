@@ -101,7 +101,7 @@ export const BarcodeSelector: React.FC<BarcodeSelectorProps> = ({ onSelect }) =>
                     if (el) triggerRefs.current[category] = el;
                   }}
                   className="cursor-pointer p-2 flex items-center justify-between whitespace-nowrap text-sm font-medium w-full 
-                  bg-accent-foreground text-primary-foreground hover:bg-primary/90 h-10 rounded-none px-3"
+                  bg-[#3c3c44] text-primary-foreground hover:bg-primary/75 h-10 rounded-none px-3"
                   style={{ fontWeight: 600 }}
                 >
                   <span>{CATEGORY_NAMES[category as Category]}</span>
