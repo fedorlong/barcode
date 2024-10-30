@@ -18,14 +18,13 @@ const Header = () => {
       <div className="container mx-auto px-10 py-3 flex items-center justify-between">
         <div className="flex items-center space-x-9">
           <Link href="/" className="flex items-center">
-            <Image src="/img/upca.png" alt="Site Logo" width={40} height={40} />
-            <span className="ml-2 text-xl font-bold">BARCODE GENIE</span>
+            <Image src="/img/logo.png" alt="Site Logo" width={35} height={35} />
+            <span className="ml-2 text-xl font-bold">FreeBarcodeGenerator</span>
           </Link>
 
           <nav className="hidden md:flex space-x-4">
-            {/* <Link href="#generator" className="text-gray-600 hover:text-gray-900">生成器</Link> */}
-            <Link href="#types" className="font-medium text-gray-600 hover:text-gray-900">Changelog</Link>
-            <Link href="#about" className="font-medium text-gray-600 hover:text-gray-900">Blog</Link>
+            {/* <Link href="#types" className="font-medium text-gray-600 hover:text-gray-900">Changelog</Link>
+            <Link href="#about" className="font-medium text-gray-600 hover:text-gray-900">Blog</Link> */}
             <Link href="#faq" className="font-medium text-gray-600 hover:text-gray-900">FAQ</Link>
           </nav>
         </div>

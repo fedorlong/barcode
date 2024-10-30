@@ -1,3 +1,4 @@
+import GoogleAnalytics from "@/app/GoogleAnalytics";
 import Header from "@/components/header/Header";
 import BarcodeGenerator from "@/components/home/BarcodeGenerator";
 import BarcodeTypes from "@/components/home/BarcodeTypes";
@@ -33,6 +34,13 @@ export default function Home() {
 
         <Footer />
       </div>
+      {process.env.NODE_ENV === "development" ? (
+        <></>
+      ) : (
+        <>
+          <GoogleAnalytics />
+        </>
+      )}
     </div>
   );
 }

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://freebarcodegen.com/
+
+# Sitemaps
+Sitemap: https://freebarcodegen.com/sitemap.xml

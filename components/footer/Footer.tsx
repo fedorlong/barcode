@@ -12,7 +12,7 @@ const Footer = () => {
             <Textarea
               className="text-sm px-2 py-1"
               readOnly
-              value={`<a href="https://www.yourwebsite.com" title="Leading Barcode Generator" rel="nofollow">Leading Barcode Generator</a>`}
+              value={`<a href="https://www.freebarcodegen.com" title="Free Barcode Generator" rel="nofollow">Free Barcode Generator</a>`}
             />
           </div>
           <div className="grid grid-cols-2 gap-4 md:w-1/3">
@@ -20,8 +20,8 @@ const Footer = () => {
               <h3 className="text-base font-semibold mb-4">Links</h3>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/">Home</Link></li>
-                <li><Link href="/contact">Contact</Link></li>
-                <li><Link href="/blog">Blog</Link></li>
+                {/* <li><Link href="/contact">Contact</Link></li>
+                <li><Link href="/blog">Blog</Link></li> */}
               </ul>
             </div>
             <div>

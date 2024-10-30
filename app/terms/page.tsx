@@ -2,8 +2,8 @@
 import React from 'react';
 
 export const metadata = {
-  title: 'Terms of Use - Barcode Genie',
-  description: 'Terms of Use for Barcode Genie',
+  title: 'Terms of Use - Free Barcode Generator',
+  description: 'Terms of Use for Free Barcode Generator',
 };
 
 const TermsOfUse: React.FC = () => {
@@ -13,11 +13,11 @@ const TermsOfUse: React.FC = () => {
       <div className="space-y-4">
         <section>
           <h2 className="text-xl font-semibold mb-2">1. Acceptance of Terms</h2>
-          <p>Welcome to Barcode Genie. By accessing or using our website, you agree to be bound by these terms. If you do not agree to these terms, please do not use our service.</p>
+          <p>Welcome to Free Barcode Generator. By accessing or using our website, you agree to be bound by these terms. If you do not agree to these terms, please do not use our service.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold mb-2">2. Description of Service</h2>
-          <p>Barcode Genie provides an online barcode generation service. We reserve the right to modify, suspend, or discontinue the service at any time without notice.</p>
+          <p>Free Barcode Generator provides an online barcode generation service. We reserve the right to modify, suspend, or discontinue the service at any time without notice.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold mb-2">3. User Responsibilities</h2>
@@ -25,7 +25,7 @@ const TermsOfUse: React.FC = () => {
         </section>
         <section>
           <h2 className="text-xl font-semibold mb-2">4. Intellectual Property</h2>
-          <p>All content, design, and functionality within our website and service are the property of Barcode Genie and are protected by copyright and other intellectual property laws.</p>
+          <p>All content, design, and functionality within our website and service are the property of Free Barcode Generator and are protected by copyright and other intellectual property laws.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold mb-2">5. Disclaimer</h2>

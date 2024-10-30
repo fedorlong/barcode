@@ -1,8 +1,8 @@
 import React from 'react';
 
 export const metadata = {
-  title: 'Privacy Policy - Barcode Genie',
-  description: 'Privacy Policy for Barcode Genie',
+  title: 'Privacy Policy - Free Barcode Generator',
+  description: 'Privacy Policy for Free Barcode Generator',
 };
 
 const PrivacyPolicy: React.FC = () => {
@@ -36,7 +36,8 @@ const PrivacyPolicy: React.FC = () => {
         </section>
         <section>
           <h2 className="text-xl font-semibold mb-2">7. Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy, please contact us at [Your Contact Information].</p>
+          <p>If you have any questions about this Privacy Policy, please contact us.</p>
+          {/* <p>If you have any questions about this Privacy Policy, please contact us at [Your Contact Information].</p> */}
         </section>
       </div>
     </div>
