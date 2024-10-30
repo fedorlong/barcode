@@ -16,7 +16,10 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Online Barcode Generator - Create Your Custom Barcode Easily",
   description: "Effortlessly create custom barcodes online with our free generator. Perfect for labeling, inventory, and more in both business and personal use!",
-  keywords: "barcode generator, free barcode generator, barcode generator free, online barcode generator"
+  keywords: "barcode generator, free barcode generator, barcode generator free, online barcode generator",
+  alternates: {
+    canonical: '/'
+  }
 };
 
 export default function RootLayout({
