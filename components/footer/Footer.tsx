@@ -12,7 +12,7 @@ const Footer = () => {
             <Textarea
               className="text-sm px-2 py-1"
               readOnly
-              value={`<a href="https://www.freebarcodegen.com" title="Free Barcode Generator" rel="nofollow">Free Barcode Generator</a>`}
+              value={`<a href="https://www.freebarcodegen.com" title="Free Barcode Generator">Free Barcode Generator</a>`}
             />
           </div>
           <div className="grid grid-cols-2 gap-4 md:w-1/3">

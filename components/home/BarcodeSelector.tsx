@@ -86,7 +86,7 @@ export const BarcodeSelector: React.FC<BarcodeSelectorProps> = ({ onSelect }) =>
   return (
     <Card className="rounded">
       <CardContent className="pt-4 pb-0 px-0">
-        <div ref={cardRef} className="max-h-[40vh] overflow-y-auto px-4">
+        <div ref={cardRef} className="max-h-[45vh] overflow-y-auto px-4">
           <Accordion
             type="single"
             value={openCategory}
