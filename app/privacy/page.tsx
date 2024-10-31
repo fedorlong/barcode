@@ -36,8 +36,7 @@ const PrivacyPolicy: React.FC = () => {
         </section>
         <section>
           <h2 className="text-xl font-semibold mb-2">7. Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy, please contact us.</p>
-          {/* <p>If you have any questions about this Privacy Policy, please contact us at [Your Contact Information].</p> */}
+          <p>If you have any questions about this Privacy Policy, please contact us at <a className='text-blue-600 hover:underline' href='mailto:support@freebarcodegen.com'>support@freebarcodegen.com</a></p>
         </section>
       </div>
     </div>

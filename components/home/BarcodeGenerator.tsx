@@ -133,7 +133,7 @@ const BarcodeGenerator = () => {
             <CardFooter className="mt-auto flex justify-center">
               <Button className="mr-2" onClick={downloandBarcode}><DownloadIcon className="mr-2" />Download Barcode</Button>
               <Select value={outputType} onValueChange={handleOutputTypeChange}>
-                <SelectTrigger>
+                <SelectTrigger className="max-w-[100px]">
                   <SelectValue placeholder="output type" />
                 </SelectTrigger>
                 <SelectContent>
