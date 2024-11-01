@@ -4,6 +4,7 @@ import BarcodeGenerator from "@/components/home/BarcodeGenerator";
 import BarcodeTypes from "@/components/home/BarcodeTypes";
 import SiteIntro from "@/components/home/SiteIntro";
 import FAQ from "@/components/home/FAQ";
+import Support from "@/components/home/Support";
 import Footer from "@/components/footer/Footer";
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
           <BarcodeGenerator />
           <BarcodeTypes />
           <FAQ />
+          <Support />
         </main>
 
         <Footer />
