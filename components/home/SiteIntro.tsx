@@ -12,11 +12,11 @@ const SiteIntro = () => {
           </p>
         </div>
         <h1 className="font-bold tracking-tighter text-3xl md:text-4xl lg:text-5xl mt-5 mb-3">A Barcode Generator so good<br className="hidden sm:inline" /> it feels like magic</h1>
-        <p className="text-balance font-light text-foreground mt-4 text-sm sm:text-sm mb-1">
+        <div className="text-balance font-light text-foreground mt-4 text-sm sm:text-sm mb-1">
           Quickly create&nbsp;
           <QuickGen />&nbsp;
           and more. Free Barcode Generator supports 100+ formats for retail, inventory, and logistics.
-        </p>
+        </div>
       </div>
     </section>
   );

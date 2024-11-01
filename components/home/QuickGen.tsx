@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import { Badge } from "@/components/ui/badge"
 import { COMMON_BARCODE_TYPES } from '@/lib/consts';
 import { useBarcodeStore } from '@/lib/store';
 
@@ -15,19 +15,17 @@ export const QuickGen = () => {
 
   return (
     <>
-      {COMMON_BARCODE_TYPES.map((type, index) => (
+      {COMMON_BARCODE_TYPES.map((type) => (
         <React.Fragment key={type.value}>
-          {index > 0 && <span className="mx-1">,</span>}
-          <Link
-            href="#generator"
-            className="text-blue-600 hover:text-blue-800 hover:underline"
-            onClick={(e) => {
-              e.preventDefault();
+          <Badge
+            variant="outline"
+            className="mr-1 mb-1 cursor-pointer hover:border-primary/50 hover:shadow-md transition-all"
+            onClick={() => {
               handleQuickSelect(type.value);
             }}
           >
             {type.label}
-          </Link>
+          </Badge>
         </React.Fragment>
       ))}
     </>
