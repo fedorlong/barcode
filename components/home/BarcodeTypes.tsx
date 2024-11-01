@@ -29,8 +29,8 @@ const BarcodeTypes = () => {
                     decoding="async"
                   />
                 </div>
-                <p className="mb-2"><strong>Format:</strong> {type.dataFormat}</p>
-                <p><strong>Usage:</strong> {type.usage}</p>
+                <p className="mb-2 text-xs"><strong>Format:</strong> {type.dataFormat}</p>
+                <p className="text-xs"><strong>Usage:</strong> {type.usage}</p>
               </CardContent>
             </Card>
           ))}

@@ -7,7 +7,7 @@ const faqItems = [
   },
   {
     question: "What types of barcodes are supported?",
-    answer: "We support a variety of common barcode types, including Code 128, QR Code, EAN-13, and more. You can view all available types in the select menu of the generator."
+    answer: "Our barcode generator support a variety of common barcode types, including Code 128, QR Code, EAN-13, and more. You can view all available types in the select menu of the generator."
   },
   {
     question: "What is the quality of the barcode image generated?",

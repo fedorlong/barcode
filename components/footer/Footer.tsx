@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 md:w-2/3 pr-10">
             <h3 className="text-lg font-semibold mb-1">Support Us by Sharing!</h3>
-            <p className="text-sm mb-1">Enjoy our barcode tool? Share the link and help us reach more users!</p>
+            <p className="text-sm mb-1">Enjoy our barcode generator? Share the link and help us reach more users!</p>
             <Textarea
               className="text-sm px-2 py-1"
               readOnly
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 text-center">
-          <p>&copy; {new Date().getFullYear()} Barcode Generator. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Free Barcode Generator. All rights reserved.</p>
         </div>
       </div>
     </footer>
