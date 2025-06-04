@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Free Barcode Generator (freebarcodegen.com)
 
-## Getting Started
+This is a free online barcode generator that allows you to quickly and easily create various types of barcodes for your business or personal needs.
 
-First, run the development server:
+**Website:** [https://freebarcodegen.com/](https://freebarcodegen.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **Completely Free**: Generate barcodes at no cost.
+*   **Supports Multiple Formats**:
+    *   Retail (Point of Sale): EAN-13, UPC-A, EAN-8, UPC-E, ISBN, ISSN, ISMN
+    *   One Dimensional
+    *   Two Dimensional: QR Code, Data Matrix, Aztec Code, PDF417
+    *   Supply Chain
+    *   GS1 DataBar
+    *   Postal: USPS POSTNET
+    *   Pharmaceutical: Pharmaceutical Binary Code
+    *   And over 100 other formats!
+*   **Easy to Use**: Simply enter your data, select the barcode type, and generate.
+*   **Instant Preview**: Preview the generated barcode before downloading.
+*   **Multiple Download Options**: (Please fill in the supported download formats, e.g., PNG, JPG, SVG, etc., based on actual availability)
+*   **Wide Range of Uses**: Suitable for retail, inventory management, logistics tracking, product labeling, personal projects, and more.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 How to Use
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  Visit the website: [https://freebarcodegen.com/](https://freebarcodegen.com/)
+2.  Enter your desired data in the "Barcode Data" input field.
+3.  Select your required "Barcode Type" from the list.
+4.  Click the "Generate Barcode" button.
+5.  Preview the generated barcode.
+6.  Click the "Download Barcode" button to download your barcode.
 
-## Learn More
+## ❓ Frequently Asked Questions (FAQ)
 
-To learn more about Next.js, take a look at the following resources:
+The website provides answers to some common questions, such as:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*   How to generate a barcode?
+*   What types of barcodes are supported?
+*   What is the quality of the generated barcode image?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For more details, please visit the FAQ section on the website.
 
-## Deploy on Vercel
+## 🔗 Links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+*   **Official Website**: [https://freebarcodegen.com/](https://freebarcodegen.com/)
+*   **Privacy Policy**: [https://freebarcodegen.com/privacy](https://freebarcodegen.com/privacy)
+*   **Terms of Service**: (Please add the link to the Terms of Service page, if available)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ❤️ Support Us
+
+If you find this tool useful, please share it with others!
+
+---
+
+Hope this README is helpful to you!
