@@ -19,6 +19,7 @@ const Footer = () => {
               <h3 className="text-base font-semibold mb-4">Links</h3>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/">Home</Link></li>
+                <li><Link href="https://github.com/fedorlong/barcode" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">GitHub</Link></li>
                 {/* <li><Link href="/contact">Contact</Link></li>
                 <li><Link href="/blog">Blog</Link></li> */}
               </ul>
